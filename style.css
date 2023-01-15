@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin:0;
+  background-color: black;
+}
+
+.chess{
+  width: 640px;
+  height: 640px;
+  border-top: 25px outset #00ccff;
+  border-left: 25px outset #d400d4;
+  border-bottom: 25px inset #00ccff;
+  border-right: 25px inset #d400d4;
+ left: 25%;
+ position: absolute;
+ top: 5%;
+}
+
+.black{
+  width: 80px;
+  height: 80px;
+  float: left;
+  background-color: grey;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+/* DUPLICATING SHORTCUT : ALT + SHIFT + DOWN ARROW */
+.white{
+  width: 80px;
+  height: 80px;
+  float: left;
+  background-color: white;
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* MAKING MOBILE RESPONSIVENESS */
+@media screen and (max-width:600px) {
+  .chess{
+    width: 320px;
+    height: 320px;
+    left: 5%;
+    border-top: 15px outset #00ccff;
+  border-left: 15px outset #d400d4;
+  border-bottom: 15px inset #00ccff;
+  border-right: 15px inset #d400d4;
+  }
+
+  .black, .white{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
